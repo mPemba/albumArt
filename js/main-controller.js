@@ -1,11 +1,11 @@
 var app = angular.module('albumArt');
 
-app.controller('main-controller', function($scope) {
+app.controller('main-controller', function($scope, itunesService) {
 
     var finalArray = [];
 
     $scope.getSongData = function() {
-    	itunes-service.getMusic($scope.artist).then(function(res) {
+    	itunesService.getMusic($scope.artist).then(function(res) {
     		newVar = res.data.results;
     		console.log(res);
     		for (var key in newVar) {
@@ -21,7 +21,7 @@ app.controller('main-controller', function($scope) {
 	$scope.gridOptions = {
 		filterOptions: $scope.search,
 		data: 'songData',
-		height: '100px',
+		height: '500px',
 		sortInfo: {fields: ['Song', 'Artist', 'Collection', 'Type'], directions: ['asc']},
 		columnDefs: [
 		    {field: 'AlbumArt', displayName: 'albumArt', width: '110px', cellTemplate: '<div class="ngCellText" ng-class="col.colIndex()"><img src="{{row.getProperty(col.field)}}"></div>'},
