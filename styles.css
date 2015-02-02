@@ -1,0 +1,9 @@
+* {
+	background: hsl(0, 0%, 85%);
+}
+
+.gridStyle {
+	border: 1px solid white;
+	width: 100px;
+	height: 100px;
+}
