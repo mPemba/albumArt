@@ -7,7 +7,7 @@ app.controller('main-controller', function($scope, itunesService) {
    $scope.getSongData = function() {
       itunesService.getMusic($scope.artist).then(function(res){
           $scope.musicData = res.data.results;
-          var musicData = res.data.results;
+          var musicData = $scope.musicData;
           for (var key in musicData) {
             finalArray.push({
                 albumArt: musicData[key].artworkUrl100
@@ -34,9 +34,7 @@ app.controller('main-controller', function($scope, itunesService) {
     // 		}
     // 	})
     // }
-
     // $scope.songData = finalArray;
-
 	// $scope.gridOptions = {
 	// 	filterOptions: $scope.search,
 	// 	data: 'songData',
