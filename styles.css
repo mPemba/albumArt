@@ -2,9 +2,37 @@
 	background: hsl(0, 0%, 85%);
 	text-align: center;
 }
+.btn {
+	text-decoration: none;
+	outline: none;
+	border: 1px solid hsl(0, 0%, 25%);
+	color: hsl(0, 0%, 25%);
+	text-align: center;
+	padding: 8px;
+	width: 150px;
+}
+.form-control {
+	padding: 8px;
+	outline: none;
+	width: 150;
+	text-decoration: none;
+	border: 1px solid hsl(0, 0%, 25%);
+}
+.navbar-brand {
+	font-weight: lighter;
+	font-family: 'Didot';
+	font-size: 3rem;
+	text-decoration: none;
+	color: hsl(0, 0%, 25%);
+}
 
-.gridStyle {
-	border: 1px solid white;
-	width: 100px;
-	height: 100px;
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+	margin: 0 auto;
+	height: 1000px;
+	width: 900px;
 }
