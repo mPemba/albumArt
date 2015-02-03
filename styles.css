@@ -1,16 +1,15 @@
 * {
-	background: hsl(0, 0%, 85%);
+	background: hsl(0, 0%, 98%);
 	text-align: center;
 }
 
 .btn:hover {
 	background: hsl(0, 0%, 25%);
-	outline: none;
-	border: none;
 	color: white;
 }
 
 .btn {
+	font-family: 'Gill Sans', 'Verdana';
 	font-weight: bold;
 	text-decoration: none;
 	outline: none;
@@ -21,6 +20,8 @@
 	width: 150px;
 }
 .form-control {
+	margin: 20px auto;
+	font-family: 'Gill Sans', 'Verdana';
 	font-weight: bold;
 	padding: 8px;
 	outline: none;
@@ -28,13 +29,14 @@
 	text-decoration: none;
 	border: 2px solid hsl(0, 0%, 25%);
 }
+/* navbar-brand is the main "albumArt" headline */
+
 .navbar-brand {
-	text-shadow: 2px 2px hsl(0, 0%, 25%);
-	font-weight: bold;
-	font-family: 'Didot';
-	font-size: 4rem;
+	font-weight: lighter;
+	font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
+	font-size: 5rem;
 	text-decoration: none;
-	color: hsl(25, 93%, 55%);
+	color: hsl(0, 0%, 19%);
 }
 
 html, body {
@@ -44,6 +46,10 @@ html, body {
 
 .container {
 	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: space-around;
 	height: 1000px;
 	width: 900px;
 }
