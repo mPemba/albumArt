@@ -3,6 +3,7 @@
 <head>
   <title>albumArt</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ng-grid/2.0.11/ng-grid.min.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
   <link rel="stylesheet" href="styles.css" type="text/css"/>
 </head>
 <body ng-controller="main-controller">
@@ -13,17 +14,26 @@
   </div>
   <form class="navbar-form search">
     <div class="form-group">
-      <input type="text" class="form-control" ng-model="artist" placeholder="artist name"/>
-      <button class="btn btn-primary" ng-click="getSongData()">Submit</button>
-      <input type="text" class="form-control" ng-model="search" placeholder="Search Data"/>
+      <input type="text" class="form-control" ng-model="artist" placeholder="Enter Artist"/>
+      <button class="btn btn-primary" ng-click="getSongData()">See the Art!</button>
+      <!-- <input type="text" class="form-control" ng-model="search" placeholder="Search Data"/> -->
     </div>
   </form>
 <hr>
-
-<div class="container">
-  <div class="albumArt" ng-repeat="key in songData | filter: search"><img ng-src="{{key.albumArt}}"></div>
+<div class="aAcontainer">
+  <div class="container" ng-repeat="key in songData">
+    <div class="albumArt"><img ng-src="{{key.albumArt}}"></div>
+  </div>
 </div>
-
+<hr>
+<footer class="foot">
+  <a href="https://thunderlittlethunder.bandcamp.com/" target="_blank"><i class="fa fa-anchor fa-2x"></i></a>
+  <a href="https://soundcloud.com/michael-sayer-1" target="_blank"><i class="fa fa-soundcloud fa-2x"></i></a>
+  <a href="https://www.facebook.com/michael.sayer.501" target="_blank"><i class="fa fa-facebook-official fa-2x"></i></a>
+  <a href="https://github.com/mPemba" target="_blank"><i class="fa fa-github-alt fa-2x"></i></a>
+  <a href="https://plus.google.com/u/0/+MichaelSayerbornOnASaturday/posts" target="_blank"><i class="fa fa-google-plus fa-2x"></i></a>
+  <a href="https://www.linkedin.com/profile/view?id=382847272&trk=nav_responsive_tab_profile" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+</footer>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.11/angular.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/ng-grid/2.0.11/ng-grid.min.js"></script>

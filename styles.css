@@ -4,8 +4,9 @@
 }
 
 .btn:hover {
-	background: hsl(0, 0%, 25%);
-	color: white;
+	background: url('http://pic.azimage.com/photos/premium/thumbs/172/black-and-white-piano-top-view_17237317.jpg');
+	text-shadow: 1px 1px hsl(0, 0%, 98%);
+	color: hsl(0, 0%, 25%);
 }
 
 .btn {
@@ -43,13 +44,35 @@ html, body {
   height: 100%;
   width: 100%;
 }
-
+.aAcontainer {
+	margin: 0px 100px 0px 100px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around | center;
+}
 .container {
 	margin: 0 auto;
+}
+.albumArt {
+	margin: 0 auto;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-content: space-around;
-	height: 1000px;
+	overflow: scroll;
+}
+.albumArt:hover {
+	box-shad
+}
+
+.foot {
+	font-family: 'Gill Sans', 'Verdana';
+	font-weight: lighter;
+	margin: 0 auto;
+	height: 100px;
 	width: 900px;
+}
+.fa {
+	color: hsl(0, 0%, 19%);
+	margin: 0px 8px 0px 8px;
+	height: 30px;
+	width: 30px;
 }
