@@ -23,9 +23,11 @@
 <!-- <div class="container">
   <div class="gridStyle" ng-grid="gridOptions"></div>
 </div> -->
+
 <div class="container">
-  <span class="albumArt" ng-repeat="songData in songData">{{songData.AlbumArt}}</span>
+  <div class="albumArt" ng-repeat="key in songData">{{key.albumArt}}</div>
 </div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.11/angular.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/ng-grid/2.0.11/ng-grid.min.js"></script>

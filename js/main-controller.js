@@ -4,25 +4,38 @@ app.controller('main-controller', function($scope, itunesService) {
 
     var finalArray = [];
 
-    $scope.getSongData = function() {
-    	itunesService.getMusic($scope.artist).then(function(res) {
-    		$scope.musicData = res.data.results;
-    		var musicData = res.data.results;
-    		console.log(res);
-    		for (var key in musicData) {
-    			finalArray.push({
-    				AlbumArt: musicData[key].artworkUrl100,
-    			})
-    		}
-    	})
-    }
-
-    $scope.songData = finalArray;
-
+   $scope.getSongData = function() {
+      itunesService.getMusic($scope.artist).then(function(res){
+          $scope.musicData = res.data.results;
+          var musicData = res.data.results;
+          for (var key in musicData) {
+            finalArray.push({
+                albumArt: musicData[key].artworkUrl100
+            });
+          };
+          console.log(res);
+      });
+   };
+   $scope.songData = finalArray;
 
 
+    // $scope.getSongData = function() {
+    // 	itunesService.getMusic($scope.artist).then(function(res) {
+    // 		$scope.musicData = res.data.results;
+    // 		var musicObj = {
+    //             data: $scope.musicData,
+    //             cover: $scope.musicData.artworkUrl100
+    //         }
+    // 		console.log(musicObj);
+    // 		for (var key in musicData) {
+    // 			finalArray.push({
+    // 				AlbumArt: musicData[key].artworkUrl100,
+    // 			})
+    // 		}
+    // 	})
+    // }
 
-
+    // $scope.songData = finalArray;
 
 	// $scope.gridOptions = {
 	// 	filterOptions: $scope.search,

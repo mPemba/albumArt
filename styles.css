@@ -2,28 +2,39 @@
 	background: hsl(0, 0%, 85%);
 	text-align: center;
 }
+
+.btn:hover {
+	background: hsl(0, 0%, 25%);
+	outline: none;
+	border: none;
+	color: white;
+}
+
 .btn {
+	font-weight: bold;
 	text-decoration: none;
 	outline: none;
-	border: 1px solid hsl(0, 0%, 25%);
+	border: 2px solid hsl(0, 0%, 25%);
 	color: hsl(0, 0%, 25%);
 	text-align: center;
 	padding: 8px;
 	width: 150px;
 }
 .form-control {
+	font-weight: bold;
 	padding: 8px;
 	outline: none;
 	width: 150;
 	text-decoration: none;
-	border: 1px solid hsl(0, 0%, 25%);
+	border: 2px solid hsl(0, 0%, 25%);
 }
 .navbar-brand {
-	font-weight: lighter;
+	text-shadow: 2px 2px hsl(0, 0%, 25%);
+	font-weight: bold;
 	font-family: 'Didot';
-	font-size: 3rem;
+	font-size: 4rem;
 	text-decoration: none;
-	color: hsl(0, 0%, 25%);
+	color: hsl(25, 93%, 55%);
 }
 
 html, body {
