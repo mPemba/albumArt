@@ -3,13 +3,24 @@
 	text-align: center;
 }
 
+/* navbar-brand is the main "albumArt" headline */
+
+.navbar-brand {
+	font-weight: lighter;
+	font-family: Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+	font-size: 5rem;
+	text-decoration: none;
+	color: hsl(0, 0%, 19%);
+}
+
 .btn:hover {
 	background: hsl(0, 0%, 25%);
 	color: hsl(0, 0%, 98%);
 }
 
 .btn {
-	font-family: 'Gill Sans', 'Verdana';
+	font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+	/*font-family: 'Gill Sans', 'Verdana';*/
 	font-weight: bold;
 	text-decoration: none;
 	outline: none;
@@ -20,23 +31,15 @@
 	width: 150px;
 }
 .form-control {
+	font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
 	margin: 20px auto;
-	font-family: 'Gill Sans', 'Verdana';
+	/*font-family: 'Gill Sans','Verdana';*/
 	font-weight: bold;
 	padding: 8px;
 	outline: none;
 	width: 150;
 	text-decoration: none;
 	border: 2px solid hsl(0, 0%, 25%);
-}
-/* navbar-brand is the main "albumArt" headline */
-
-.navbar-brand {
-	font-weight: lighter;
-	font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
-	font-size: 5rem;
-	text-decoration: none;
-	color: hsl(0, 0%, 19%);
 }
 
 html, body {
