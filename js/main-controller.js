@@ -1,10 +1,24 @@
 var app = angular.module('albumArt');
 
-app.controller('main-controller', function($scope, itunesService) {
+app.controller('main-controller', function($scope, $firebase, itunesService, chatMessages) {
+  
+  var ref = new Firebase("https://albumart.firebaseio.com");
+  var sync = $firebase(ref).$asArray();
+
+  $scope.messages = chatMessages;
+
+  $scope.addMessage = function(message) {
+    $scope.messages.$add({content: message});
+    $scope.message = "";
+  };
+
+  $scope.messages.$loaded(function(messages) {
+    if (messages.length === 0) {
+        messages.$add({content: "hey bud!"});
+    };
+  });
 
   var finalArray = [];
-
-  // $scope.search = {filterText: ''};
 
    $scope.getSongData = function() {
       itunesService.getMusic($scope.artist).then(function(res){
