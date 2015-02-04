@@ -81,3 +81,6 @@ html, body {
 .messageBox {
 	list-style-type: none;
 }
+.text-box {
+	width: 400px;
+}
