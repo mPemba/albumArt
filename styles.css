@@ -1,5 +1,5 @@
 * {
-	background: hsl(0, 0%, 98%);
+	background: hsl(50, 24%, 90%);
 	text-align: center;
 }
 html, body {
@@ -12,7 +12,7 @@ html, body {
 	font-weight: lighter;
 	font-size: 5rem;
 	text-decoration: none;
-	color: hsl(0, 0%, 25%);
+	color: hsl(12, 8%, 13%);
 }
 .btn {
 	font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
@@ -20,14 +20,14 @@ html, body {
 	font-weight: bold;
 	text-decoration: none;
 	outline: none;
-	border: 2px solid hsl(0, 0%, 25%);
+	border: 2px solid hsl(12, 8%, 13%);
 	color: hsl(0, 0%, 25%);
 	text-align: center;
 	padding: 8px;
 	width: 150px;
 }
 .btn:hover {
-	background: hsl(202, 60%, 15%);
+	background: hsl(168, 29%, 53%);
 	color: hsl(0, 0%, 98%);
 }
 /* any text inputs will be under form-control */
@@ -40,18 +40,19 @@ html, body {
 	outline: none;
 	width: 150;
 	text-decoration: none;
-	border: 2px solid hsl(0, 0%, 25%);
+	border: 2px solid hsl(12, 8%, 13%);
 }
 .form-control:hover {
-	background: hsl(359, 42%, 41%);
+	background: hsl(14, 80%, 57%);
 	color: hsl(0, 0%, 98%);
 }
+/*    LOGIN PAGE, OUTER LAYER, HEADLINE CONT, FORM & BUTTON   */
 .login-layer {
-	background: hsl(202, 60%, 15%);
+	background: hsl(97, 13%, 27%);
 	height: 50%;
 	width: 50%;
 	margin: 0 auto;
-	border: 2px solid hsl(359, 42%, 41%);
+	border: 2px solid hsl(325, 44%, 38%);
 	margin-top: 50px;
 	border-radius: 50px;
 }
@@ -60,20 +61,20 @@ html, body {
 	margin-top: 35px;
 	width: 35%;
 	height: 35%;
-	border: 2px solid hsl(0, 0%, 98%);
+	border: 1px solid hsl(325, 44%, 38%);
 	border-radius: 10px;
-	background: hsl(0, 0%, 29%);
+	background: hsl(12, 8%, 13%);
 }
 .login-headline {
-	color: hsl(0, 0%, 98%);
+	color: hsl(50, 24%, 90%);
 	font-family: 'Playfair Display', serif;
 	font-size: 2rem;
 	font-weight: lighter;
-	background: hsl(0, 0%, 29%);
+	background: hsl(12, 8%, 13%);
 }
 .login-form-control {
 	color: hsl(0, 0%, 98%);
-	background: hsl(202, 60%, 15%);
+	background: hsl(97, 13%, 27%);
 	font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
 	margin: 20px auto;
 	/*font-family: 'Gill Sans','Verdana';*/
@@ -82,26 +83,26 @@ html, body {
 	outline: none;
 	width: 150;
 	text-decoration: none;
-	border: 2px solid hsl(0, 0%, 98%);
+	border: 2px solid hsl(50, 24%, 90%);
 }
 .login-form-control:hover {
-	background: hsl(359, 42%, 41%);
+	background: hsl(325, 44%, 38%);
 }
 .login-btn {
-	background: hsl(202, 49%, 36%);
+	background: hsl(97, 13%, 27%);
 	font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
 	/*font-family: 'Gill Sans', 'Verdana';*/
 	font-weight: bold;
 	text-decoration: none;
 	outline: none;
-	border: 2px solid hsl(0, 0%, 98%);
+	border: 2px solid hsl(50, 24%, 90%);
 	color: hsl(0, 0%, 98%);
 	text-align: center;
 	padding: 8px;
 	width: 150px;	
 }
 .login-btn:hover {
-    background: hsl(359, 42%, 41%);
+    background: hsl(168, 29%, 53%);
 }
 .aAcontainer {
 	margin: 0px 100px 0px 100px;
