@@ -1,0 +1,35 @@
+<div class="full-cont">
+<div class="navbar">
+    <div class="navbar-header">
+    <h1 class="navbar-brand">albumArt</h1>
+</div>
+<hr>
+<form class="navbar-form search">
+  <div class="form-group">
+      <input type="text" class="form-control" ng-model="artist" placeholder="Artist Name..."/>
+      <button class="btn btn-primary" ng-click="getSongData()">See the Art!</button>
+  </div>
+</form>
+
+<div class="aAcontainer">
+  <div class="container" ng-repeat="key in songData">
+    <div class="albumArt"><img ng-src="{{key.albumArt}}"></div>
+  </div>
+</div>
+
+<form class ng-submit="addMessage(message)">
+      <input class="form-control text-box" type="text" ng-model="message"/>
+      <input class="btn" type="submit" value="Post Your Message"/>
+</form>
+<ul class="messageBox">
+      <li class="messageText" ng-repeat="message in messages">{{message.content}}</li>
+</ul>
+<footer class="foot">
+  <a href="https://thunderlittlethunder.bandcamp.com/" target="_blank"><i class="fa fa-anchor fa-2x bandcamp"></i></a>
+  <a href="https://soundcloud.com/michael-sayer-1" target="_blank"><i class="fa fa-soundcloud fa-2x soundcloud"></i></a>
+  <a href="https://www.facebook.com/michael.sayer.501" target="_blank"><i class="fa fa-facebook-official fa-2x facebook"></i></a>
+  <a href="https://github.com/mPemba" target="_blank"><i class="fa fa-github-alt fa-2x github"></i></a>
+  <a href="https://plus.google.com/u/0/+MichaelSayerbornOnASaturday/posts" target="_blank"><i class="fa fa-google-plus fa-2x gPlus"></i></a>
+  <a href="https://www.linkedin.com/profile/view?id=382847272&trk=nav_responsive_tab_profile" target="_blank"><i class="fa fa-linkedin fa-2x linkedin"></i></a>
+</footer>
+</div>

@@ -2,22 +2,18 @@
 	background: hsl(0, 0%, 98%);
 	text-align: center;
 }
-
-/* navbar-brand is the main "albumArt" headline */
-
+html, body {
+	height: 100%;
+	width: 100%;
+}
+/* navbar-brand === albumArt Headline */
 .navbar-brand {
+	font-family: 'Playfair Display', serif;
 	font-weight: lighter;
-	font-family: Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif;
 	font-size: 5rem;
 	text-decoration: none;
-	color: hsl(0, 0%, 19%);
+	color: hsl(0, 0%, 25%);
 }
-
-.btn:hover {
-	background: hsl(0, 0%, 25%);
-	color: hsl(0, 0%, 98%);
-}
-
 .btn {
 	font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
 	/*font-family: 'Gill Sans', 'Verdana';*/
@@ -30,6 +26,11 @@
 	padding: 8px;
 	width: 150px;
 }
+.btn:hover {
+	background: hsl(202, 60%, 15%);
+	color: hsl(0, 0%, 98%);
+}
+/* any text inputs will be under form-control */
 .form-control {
 	font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
 	margin: 20px auto;
@@ -41,10 +42,66 @@
 	text-decoration: none;
 	border: 2px solid hsl(0, 0%, 25%);
 }
-
-html, body {
-  height: 100%;
-  width: 100%;
+.form-control:hover {
+	background: hsl(359, 42%, 41%);
+	color: hsl(0, 0%, 98%);
+}
+.login-layer {
+	background: hsl(202, 60%, 15%);
+	height: 50%;
+	width: 50%;
+	margin: 0 auto;
+	border: 2px solid hsl(359, 42%, 41%);
+	margin-top: 50px;
+	border-radius: 50px;
+}
+.login-container {
+	margin: 0 auto;
+	margin-top: 35px;
+	width: 35%;
+	height: 35%;
+	border: 2px solid hsl(0, 0%, 98%);
+	border-radius: 10px;
+	background: hsl(0, 0%, 29%);
+}
+.login-headline {
+	color: hsl(0, 0%, 98%);
+	font-family: 'Playfair Display', serif;
+	font-size: 2rem;
+	font-weight: lighter;
+	background: hsl(0, 0%, 29%);
+}
+.login-form-control {
+	color: hsl(0, 0%, 98%);
+	background: hsl(202, 60%, 15%);
+	font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+	margin: 20px auto;
+	/*font-family: 'Gill Sans','Verdana';*/
+	font-weight: bold;
+	padding: 8px;
+	outline: none;
+	width: 150;
+	text-decoration: none;
+	border: 2px solid hsl(0, 0%, 98%);
+}
+.login-form-control:hover {
+	background: hsl(359, 42%, 41%);
+}
+.login-btn {
+	background: hsl(202, 49%, 36%);
+	font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+	/*font-family: 'Gill Sans', 'Verdana';*/
+	font-weight: bold;
+	text-decoration: none;
+	outline: none;
+	border: 2px solid hsl(0, 0%, 98%);
+	color: hsl(0, 0%, 98%);
+	text-align: center;
+	padding: 8px;
+	width: 150px;	
+}
+.login-btn:hover {
+    background: hsl(359, 42%, 41%);
 }
 .aAcontainer {
 	margin: 0px 100px 0px 100px;
@@ -52,6 +109,7 @@ html, body {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around | center;
+	height: 400px;
 }
 .container {
 	margin: 0 auto;
@@ -61,26 +119,52 @@ html, body {
 	display: flex;
 	overflow: scroll;
 }
-.albumArt:hover {
-	box-shad
-}
-
 .foot {
+	text-align: center;
 	font-family: 'Gill Sans', 'Verdana';
 	font-weight: lighter;
 	margin: 0 auto;
 	height: 100px;
 	width: 900px;
+	padding-top: 100px;
 }
 .fa {
-	color: hsl(0, 0%, 19%);
-	margin: 0px 8px 0px 8px;
+	color: hsl(202, 60%, 15%);
+	margin: 0px 20px 0px 20px;
 	height: 30px;
 	width: 30px;
 }
+/*.fa:hover {
+	color: hsl(202, 49%, 36%);
+}*/
+.bandcamp:hover {
+	color: hsl(179, 100%, 44%);
+}
+.soundcloud:hover {
+	color: hsl(18, 100%, 50%);
+}
+.facebook:hover {
+	color: hsl(333, 82%, 59%);
+}
+.github:hover {
+	color: hsl(47, 98%, 54%);
+}
+.gPlus:hover {
+	color: hsl(4, 67%, 52%);
+}
+.linkedin:hover {
+	color: hsl(145, 74%, 47%);
+}
 .messageBox {
+	text-align: center;
 	list-style-type: none;
 }
 .text-box {
 	width: 400px;
+}
+.messageText {
+	line-height: 1.5;
+	margin-right: 50px;
+	font-family: 'Playfair Display', serif;
+	font-weight: lighter;
 }

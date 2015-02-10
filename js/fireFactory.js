@@ -1,8 +1,6 @@
 var app = angular.module('albumArt');
 
-app.factory("chatMessages", function($firebase, $rootScope) {
-
-    // var url = "https://albumart.firebaseio.com";
+app.factory("chatMessages", function($firebase, envService, itunesService, $rootScope) {
 
     var ref = new Firebase($rootScope.url);
 
