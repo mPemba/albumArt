@@ -20,7 +20,7 @@ html, body {
 	font-weight: bold;
 	text-decoration: none;
 	outline: none;
-	border: 2px solid hsl(12, 8%, 13%);
+	border: 1px solid hsl(12, 8%, 13%);
 	color: hsl(0, 0%, 25%);
 	text-align: center;
 	padding: 8px;
